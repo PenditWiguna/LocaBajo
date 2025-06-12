@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Akun - LoCaBajo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-white h-screen">
+    <div class="flex h-screen">
+      <!-- Left: Gambar -->
+      <div class="w-1/2 relative hidden lg:block">
+        <img
+          src="asset/register (2).png"
+          alt="LoCaBajo"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+        >
+          <h1
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-4xl font-serif italic drop-shadow-lg"
+          >
+            Selamat Datang di LoCaBajo
+          </h1>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-16 lg:px-24"
+      >
+        <a href="login.html" class="text-sm text-gray-500 mb-4 hover:underline"
+          >&larr; Kembali</a
+        >
+        <h2 class="text-2xl font-bold mb-1">Daftar Akun</h2>
+        <p class="text-gray-500 mb-6">Selamat menjelajah pengalaman baru</p>
+
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Nama</label>
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Email</label>
+            <input
+              type="email"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">No Telephone</label>
+            <input
+              type="tel"
+              class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1">Password</label>
+            <div class="relative">
+              <input
+                type="password"
+                class="w-full border border-gray-300 rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+              <span
+                class="absolute inset-y-0 right-3 flex items-center text-gray-400 cursor-pointer"
+              ></span>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-gray-600 mb-1"
+              >Konfirmasi Password</label
+            >
+            <div class="relative">
+              <input
+                type="password"
+                class="w-full border border-gray-300 rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+              <span
+                class="absolute inset-y-0 right-3 flex items-center text-gray-400 cursor-pointer"
+              ></span>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 rounded-md transition-all"
+          >
+            Daftar
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

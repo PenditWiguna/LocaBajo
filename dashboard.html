@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - LoCaBajo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-sm border-r">
+        <a href="landingpage.html">
+            <div class="text-2xl font-bold px-6 py-4 border-b">LoCaBajo.</div>
+        </a>
+        
+        <nav class="mt-6">
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-3 bg-orange-500 text-white font-semibold"
+          >
+            <span>DASHBOARD</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-3 hover:bg-gray-100"
+          >
+            <span class="text-sm">TAMBAH PRODUK</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 px-6 py-3 hover:bg-gray-100"
+          >
+            <span class="text-sm">RIWAYAT ORDER</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6 overflow-auto">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h1 class="text-xl font-bold">Dashboard</h1>
+            <p class="text-sm text-gray-500">Home &gt; Dashboard</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <button>
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5"
+                />
+              </svg>
+            </button>
+            <div class="relative">
+              <button class="border px-3 py-1 rounded-md">ADMIN ▾</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+            <div class="bg-orange-100 text-orange-500 p-2 rounded-full">👜</div>
+            <div>
+              <p class="text-sm text-gray-500">Total Order</p>
+              <p class="text-lg font-bold">Rp.500.000,00</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+            <div class="bg-orange-100 text-orange-500 p-2 rounded-full">🔄</div>
+            <div>
+              <p class="text-sm text-gray-500">Aktif Order</p>
+              <p class="text-lg font-bold">Rp.200.000,00</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow flex items-center gap-4">
+            <div class="bg-orange-100 text-orange-500 p-2 rounded-full">✅</div>
+            <div>
+              <p class="text-sm text-gray-500">Order Selesai</p>
+              <p class="text-lg font-bold">Rp.1.000.000,00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts & Top Sales -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <!-- Grafik Penjualan -->
+          <div class="bg-white p-4 rounded-lg shadow col-span-2">
+            <div class="flex justify-between items-center mb-2">
+              <h2 class="font-semibold">Grafik Penjualan</h2>
+              <div class="space-x-2">
+                <button
+                  class="px-3 py-1 border rounded-md text-sm hover:bg-gray-100"
+                >
+                  MINGGUAN
+                </button>
+                <button
+                  class="px-3 py-1 border rounded-md text-sm bg-orange-500 text-white"
+                >
+                  BULANAN
+                </button>
+                <button
+                  class="px-3 py-1 border rounded-md text-sm hover:bg-gray-100"
+                >
+                  TAHUNAN
+                </button>
+              </div>
+            </div>
+            <div class="h-40 flex items-center justify-center text-orange-500">
+              <!-- Placeholder chart -->
+              <svg class="w-full h-full" viewBox="0 0 300 100">
+                <path
+                  d="M0,80 C60,75 100,70 150,70 C200,70 240,30 300,10"
+                  stroke="orange"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Penjualan Teratas -->
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h2 class="font-semibold mb-4">Penjualan Teratas</h2>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-4">
+                <img
+                  src="asset/tas.png"
+                  class="w-12 h-12 object-cover rounded-md"
+                />
+                <div>
+                  <p class="font-semibold">Tas Rotan</p>
+                  <p class="text-sm text-gray-500">Rp. 199.000,00</p>
+                </div>
+                <span class="ml-auto text-sm text-gray-600">100 terjual</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <img
+                  src="asset/miniatur.png"
+                  class="w-12 h-12 object-cover rounded-md"
+                />
+                <div>
+                  <p class="font-semibold">Miniatur Kapal</p>
+                  <p class="text-sm text-gray-500">Rp. 100.000,00</p>
+                </div>
+                <span class="ml-auto text-sm text-gray-600">100 terjual</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <img
+                  src="asset/kain.png"
+                  class="w-12 h-12 object-cover rounded-md"
+                />
+                <div>
+                  <p class="font-semibold">Kain Tenun</p>
+                  <p class="text-sm text-gray-500">Rp. 299.000,00</p>
+                </div>
+                <span class="ml-auto text-sm text-gray-600">100 terjual</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

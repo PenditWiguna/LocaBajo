@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoCaBajo - Dashboard Pengunjung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-white text-gray-800">
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 w-full z-50 transition duration-300 ease-in-out bg-transparent text-white">
+  <nav class="flex justify-between items-center p-6 px-10">
+    <a href="dashboard.html">
+        <h1 id="beranda" class="text-2xl font-bold">LoCaBajo.</h1>
+    </a>
+    
+    <ul class="flex space-x-6 text-sm">
+      <li><a href="#beranda" onclick="scrollToSection('beranda')">Beranda</a></li>
+      <li><a href="#produk" onclick="scrollToSection('produk')">Wisata</a></li>
+      <li><a href="#informasi" onclick="scrollToSection('informasi')">Produk</a></li>
+      <li>
+        <a href="produk.html">
+          <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.3 5.4a1 1 0 001 .6h12a1 1 0 001-.6L20 13M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+    <!-- Hero -->
+    <section
+      class="relative h-[500px] bg-cover bg-center"
+      style="background-image: url('/asset/image.png')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white px-4 text-center"
+      >
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Nikmati keindahan<br />dan pengalaman.
+        </h2>
+        <div
+          class="w-full max-w-xl bg-white rounded-full overflow-hidden flex shadow-md"
+        >
+          <input
+            type="text"
+            placeholder="Cari destinasi atau produk"
+            class="flex-grow px-6 py-3 text-gray-800 focus:outline-none"
+          />
+          <button class="bg-blue-600 text-white px-6">Cari</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apa yang kami tawarkan -->
+    <section id="produk" class="py-16 px-6 max-w-7xl mx-auto"></section>
+      <h3 class="text-2xl font-semibold text-brown-700 mb-10 text-center">
+        Apa yang kami tawarkan?
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md p-4">
+          <img
+            src="/asset/kapal.png"
+            alt="Penginapan"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+          />
+          <h4 class="font-semibold text-lg">Penginapan</h4>
+          <p class="text-sm text-gray-500">Tersedia</p>
+          <p class="text-sm text-gray-400">1000+ orang memilih ini</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md p-4">
+          <img
+            src="/asset/miniatur.png"
+            alt="Miniatur"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+          />
+          <h4 class="font-semibold text-lg">Miniatur</h4>
+          <p class="text-sm text-gray-500">Tersedia</p>
+          <p class="text-sm text-gray-400">1000+ orang memilih ini</p>
+          <button class="mt-4 bg-orange-400 text-white px-4 py-1 rounded-full">
+            Beli
+          </button>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md p-4">
+          <img
+            src="/asset/kain.png"
+            alt="Kain Tenun"
+            class="w-full h-48 object-cover rounded-lg mb-4"
+          />
+          <h4 class="font-semibold text-lg">Kain Tenun</h4>
+          <p class="text-sm text-gray-500">Tersedia</p>
+          <p class="text-sm text-gray-400">1000+ orang memilih ini</p>
+          <button class="mt-4 bg-orange-400 text-white px-4 py-1 rounded-full">
+            Beli
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informasi -->
+    <section id="informasi" class="py-16 px-6 max-w-7xl mx-auto id=">
+      <h3 class="text-2xl font-semibold text-brown-700 mb-10 text-center">
+        Informasi
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/tentang.jpeg"
+            alt="Tentang"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Tentang LoCaBajo</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Platform promosi wisata & produk lokal NTT.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/R.jpeg"
+            alt="Destinasi Favorit"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Destinasi Favorit</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Tempat paling sering dikunjungi wisatawan.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/tips.jpg"
+            alt="Tips"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Tips Berwisata</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Panduan aman berwisata ke Labuan Bajo.
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/umkm.jpg"
+            alt="UMKM"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">UMKM Unggulan</h4>
+            <p class="text-sm text-gray-600 mt-1">Profil UMKM terbaik lokal.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/kuliner.jpg"
+            alt="Kuliner"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Kuliner Lokal</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Makanan khas yang wajib dicoba.
+            </p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="/asset/testimoni.jpg"
+            alt="Testimoni"
+            class="w-full h-40 object-cover"
+          />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Testimoni Pengunjung</h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Cerita dari wisatawan yang puas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.remove('bg-transparent', 'text-white');
+      navbar.classList.add('bg-white', 'text-gray-800', 'shadow-md');
+    } else {
+      navbar.classList.remove('bg-white', 'text-gray-800', 'shadow-md');
+      navbar.classList.add('bg-transparent', 'text-white');
+    }
+  });
+
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+  </body>
+</html>

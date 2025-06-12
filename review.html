@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Pelanggan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <div class="max-w-3xl mx-auto py-10 px-4">
+    <!-- Header -->
+
+    <a href="produk.html">
+        <button>
+             <h2 class="text-sm text-gray-600 border-b pb-1 mb-4">Reviews</h2>
+        </button>
+    </a>
+   
+
+    <!-- Product Info -->
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h1 class="text-xl font-semibold">Review Pelanggan</h1>
+        <div class="flex items-center text-sm text-orange-500">
+          <span class="mr-2">★★★★★</span>
+          <span class="text-gray-500">2 Reviews</span>
+        </div>
+        <p class="text-gray-600 mt-1">Tas Rotan</p>
+      </div>
+      <div class="flex flex-col items-end">
+        <img src="asset/tas.png" alt="Tas Rotan" class="w-24 h-24 object-cover rounded-md mb-2" />
+        <div class="flex space-x-1 text-xl">❤️ 🙌 👍 🔥 😊 😍</div>
+        <button class="mt-2 bg-orange-400 text-white px-4 py-1 rounded-full text-sm hover:bg-orange-500">
+          Tambahkan Review
+        </button>
+      </div>
+    </div>
+
+    <!-- Sorting -->
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-medium">2 Reviews</h2>
+      <select class="border rounded px-2 py-1 text-sm">
+        <option>Terbaru</option>
+        <option>Terlama</option>
+      </select>
+    </div>
+
+    <!-- Review 1 -->
+    <div class="border-b py-4">
+      <div class="flex items-start space-x-4">
+        <img src="asset/user.png" alt="Putri Rapunsel" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+          <h3 class="font-semibold">Putri Rapunsel</h3>
+          <div class="text-orange-400 text-sm">★★★★★</div>
+          <p class="text-sm mt-1">Aku sangat menyukai tas rotan ini, sangat ringan dan elegan, aku menjadi sangat percaya diri ketika menggunakan tas ini. Terimakasih!</p>
+          <div class="text-xs text-gray-500 mt-1 flex space-x-3">
+            <span>1 jam yang lalu</span>
+            <span class="cursor-pointer hover:underline">Suka</span>
+            <span class="cursor-pointer hover:underline">Balas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="border-b py-4">
+      <div class="flex items-start space-x-4">
+        <img src="asset/user1.png" alt="Nicolas Made" class="w-12 h-12 rounded-full object-cover" />
+        <div>
+          <h3 class="font-semibold">Nicolas Made</h3>
+          <div class="text-orange-400 text-sm">★★★★★</div>
+          <p class="text-sm mt-1">Aku membeli tas ini untuk hadiah pacarku, aku kira dia tidak akan menyukainya, namun dia sangat menyukai tas ini dibanding tas yang lainnya.</p>
+          <div class="text-xs text-gray-500 mt-1 flex space-x-3">
+            <span>5 jam yang lalu</span>
+            <span class="cursor-pointer hover:underline">Suka</span>
+            <span class="cursor-pointer hover:underline">Balas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load More (opsional) -->
+    <!-- <div class="text-center mt-6">
+      <button class="px-4 py-2 text-sm border rounded text-gray-600 hover:bg-gray-100">Load more</button>
+    </div> -->
+  </div>
+</body>
+</html>
